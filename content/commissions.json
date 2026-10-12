@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "title": "Charcoal portrait", "image": "", "price": "from $150", "description": "Expressive, true-to-life portraits drawn from your photos. Individuals, couples, families, and pets." },
+    { "title": "Watercolor painting", "image": "", "price": "from $200", "description": "Homes, landscapes, florals, and keepsake scenes — loose, luminous, and full of light." },
+    { "title": "Book illustration", "image": "", "price": "custom quote", "description": "Character design, spreads, and covers for picture books, authors, and small publishers." }
+  ]
+}
