@@ -3,11 +3,11 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/artist-website
+  repo: minaru-C/artist-website
   branch: main
-  base_url: https://sveltia-cms-auth.YOUR-CLOUDFLARE-SUBDOMAIN.workers.dev
+  base_url: https://sveltia-cms-auth.chris-labreck.workers.dev
 
-site_url: https://YOUR-SITE.pages.dev
+site_url: https://artist-website.chris-labreck.workers.dev
 
 # Uploaded photos are saved here, renamed to web-friendly names,
 # converted to WebP and shrunk automatically. 1600px looks sharp on
