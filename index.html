@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watercolor, Charcoal & Illustration</title>
+  <meta name="description" content="Original watercolor paintings, commissioned charcoal portraits, children's book illustration, and online art classes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Text and pictures on this page come from the /content folder.
+     Edit them at yoursite.com/admin rather than here. -->
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <a href="#top" class="logo"><span data-text="artist_name"></span><small>studio</small></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links">
+    <a href="#gallery">Gallery</a>
+    <a href="#shop">Shop</a>
+    <a href="#commissions">Commissions</a>
+    <a href="#classes">Classes</a>
+    <a href="#illustration">Books</a>
+    <a href="#about">About</a>
+    <a data-instagram target="_blank" rel="noopener" class="ig" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow" data-text="tagline"></p>
+    <h1 data-rich="hero_heading"></h1>
+    <p class="lede" data-text="hero_text"></p>
+    <div class="hero-cta">
+      <a href="#commissions" class="btn btn-primary">Request a commission</a>
+      <a href="#shop" class="btn btn-ghost">Shop available work</a>
+    </div>
+  </div>
+  <div class="hero-art" id="heroArt"></div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Portfolio</p>
+    <h2>Gallery</h2>
+  </div>
+  <div class="filters" role="tablist">
+    <button class="filter active" data-filter="all">All work</button>
+    <button class="filter" data-filter="watercolor">Watercolor</button>
+    <button class="filter" data-filter="charcoal">Charcoal portraits</button>
+    <button class="filter" data-filter="illustration">Illustration</button>
+  </div>
+  <div class="masonry" id="galleryGrid"></div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section id="shop" class="section section-tint">
+  <div class="section-head">
+    <p class="eyebrow">Take one home</p>
+    <h2>Available originals &amp; prints</h2>
+    <p class="section-sub">Each original is one of a kind. Prints are archival giclée on cotton rag paper, signed by hand.</p>
+  </div>
+  <div class="shop-grid" id="shopGrid"></div>
+</section>
+
+<!-- ============ COMMISSIONS ============ -->
+<section id="commissions" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Made for you</p>
+    <h2>Commissions</h2>
+    <p class="section-sub">Portraits of the people (and pets) you love, paintings of a home or a place that matters, or artwork for your book.</p>
+  </div>
+
+  <div class="offerings" id="offerGrid"></div>
+
+  <ol class="process">
+    <li><span>1</span><strong>Tell me about it</strong>Fill out the form below with your idea.</li>
+    <li><span>2</span><strong>Quote &amp; sketch</strong>I'll reply within 2–3 days with pricing and a timeline.</li>
+    <li><span>3</span><strong>Deposit</strong>A 50% deposit reserves your spot on my calendar.</li>
+    <li><span>4</span><strong>Delivery</strong>You'll see progress photos, then your art ships, carefully packed.</li>
+  </ol>
+
+  <form class="request-form" id="requestForm">
+    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+
+    <h3>Request a project</h3>
+    <div class="form-row">
+      <label>Your name<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+    </div>
+    <div class="form-row">
+      <label>What would you like?
+        <select name="type" id="typeSelect" required>
+          <option value="">Choose one…</option>
+          <option>Charcoal portrait</option>
+          <option>Watercolor painting</option>
+          <option>Book illustration</option>
+          <option>Purchase an available piece</option>
+          <option>Private lesson</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Approximate size
+        <select name="size">
+          <option>Not sure yet</option>
+          <option>Small (8×10 in)</option>
+          <option>Medium (11×14 in)</option>
+          <option>Large (16×20 in)</option>
+          <option>Extra large (18×24 in +)</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-row">
+      <label>Needed by (optional)<input type="date" name="deadline"></label>
+      <label>Budget (optional)
+        <select name="budget">
+          <option>Prefer not to say</option>
+          <option>Under $200</option>
+          <option>$200–$400</option>
+          <option>$400–$800</option>
+          <option>$800+</option>
+        </select>
+      </label>
+    </div>
+    <label>Tell me about your project
+      <textarea name="message" id="messageField" rows="5" required placeholder="Who or what is it of? Is it a gift? Any colors or moods you love?"></textarea>
+    </label>
+    <p class="form-note">Have reference photos? Mention it here and I'll reply by email so you can send them over.</p>
+    <button type="submit" class="btn btn-primary">Send request</button>
+    <p class="form-status" id="formStatus" role="status"></p>
+  </form>
+</section>
+
+<!-- ============ CLASSES ============ -->
+<section id="classes" class="section section-tint">
+  <div class="section-head">
+    <p class="eyebrow">Learn with me</p>
+    <h2>Online classes</h2>
+    <p class="section-sub">Friendly, beginner-welcome lessons you can join live or watch at your own pace.</p>
+  </div>
+  <div class="class-grid" id="classGrid"></div>
+</section>
+
+<!-- ============ ILLUSTRATION ============ -->
+<section id="illustration" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Children's books</p>
+    <h2>Illustrated stories</h2>
+  </div>
+  <div class="books" id="bookGrid"></div>
+  <p class="center-note">Authors &amp; publishers: <a href="#commissions" data-prefill="Book illustration">let's talk about your book →</a></p>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section section-tint about">
+  <div class="about-photo" id="aboutPhoto"></div>
+  <div class="about-text">
+    <p class="eyebrow">Hello there</p>
+    <h2>About the artist</h2>
+    <div id="aboutText"></div>
+    <p class="signature">— <span data-text="artist_name"></span></p>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section insta">
+  <h2>Follow along on Instagram</h2>
+  <p>Works in progress, studio days, and first looks at new pieces.</p>
+  <a data-instagram target="_blank" rel="noopener" class="btn btn-ghost">@<span data-text="instagram"></span></a>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div>
+    <a href="#top" class="logo"><span data-text="artist_name"></span><small>studio</small></a>
+    <p>Original art, commissions &amp; classes.</p>
+  </div>
+  <div>
+    <p><a data-email><span data-text="email"></span></a></p>
+    <p><a data-instagram target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+  <p class="copyright">© <span id="year"></span> <span data-text="artist_name"></span>. All artwork is copyrighted and may not be reproduced without permission.</p>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <div class="lightbox-art" id="lightboxArt"></div>
+  <div class="lightbox-info">
+    <h3 id="lightboxTitle"></h3>
+    <p id="lightboxMeta"></p>
+    <a href="#commissions" class="btn btn-small" id="lightboxCta">Ask about this piece</a>
+  </div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
