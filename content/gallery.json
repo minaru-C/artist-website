@@ -1,13 +1,67 @@
 {
   "items": [
-    { "title": "Morning Harbor", "image": "", "category": "watercolor", "medium": "Watercolor on cotton paper", "size": "11×14 in" },
-    { "title": "Grandpa Joe", "image": "", "category": "charcoal", "medium": "Charcoal on toned paper", "size": "16×20 in" },
-    { "title": "The Lost Little Fox", "image": "", "category": "illustration", "medium": "Watercolor & ink", "size": "Book spread" },
-    { "title": "Peonies in June", "image": "", "category": "watercolor", "medium": "Watercolor", "size": "9×12 in" },
-    { "title": "Study of Hands", "image": "", "category": "charcoal", "medium": "Vine & compressed charcoal", "size": "11×14 in" },
-    { "title": "Lake Cabin", "image": "", "category": "watercolor", "medium": "Watercolor", "size": "12×9 in" },
-    { "title": "Bedtime for Bears", "image": "", "category": "illustration", "medium": "Gouache & watercolor", "size": "Cover art" },
-    { "title": "Maya, Age 6", "image": "", "category": "charcoal", "medium": "Charcoal", "size": "11×14 in" },
-    { "title": "Autumn Field", "image": "", "category": "watercolor", "medium": "Watercolor", "size": "16×12 in" }
+    {
+      "image": "/images/uploads/glen-ricketts-waterfall-with-fallen-tree.webp",
+      "title": "Mohican Falls",
+      "category": "watercolor",
+      "medium": "Watercolor on cotton paper",
+      "size": "11×14 in"
+    },
+    {
+      "image": "",
+      "title": "Grandpa Joe",
+      "category": "charcoal",
+      "medium": "Charcoal on toned paper",
+      "size": "16×20 in"
+    },
+    {
+      "image": "",
+      "title": "The Lost Little Fox",
+      "category": "illustration",
+      "medium": "Watercolor & ink",
+      "size": "Book spread"
+    },
+    {
+      "image": "",
+      "title": "Peonies in June",
+      "category": "watercolor",
+      "medium": "Watercolor",
+      "size": "9×12 in"
+    },
+    {
+      "image": "",
+      "title": "Study of Hands",
+      "category": "charcoal",
+      "medium": "Vine & compressed charcoal",
+      "size": "11×14 in"
+    },
+    {
+      "image": "",
+      "title": "Lake Cabin",
+      "category": "watercolor",
+      "medium": "Watercolor",
+      "size": "12×9 in"
+    },
+    {
+      "image": "",
+      "title": "Bedtime for Bears",
+      "category": "illustration",
+      "medium": "Gouache & watercolor",
+      "size": "Cover art"
+    },
+    {
+      "image": "",
+      "title": "Maya, Age 6",
+      "category": "charcoal",
+      "medium": "Charcoal",
+      "size": "11×14 in"
+    },
+    {
+      "image": "",
+      "title": "Autumn Field",
+      "category": "watercolor",
+      "medium": "Watercolor",
+      "size": "16×12 in"
+    }
   ]
 }
