@@ -1,8 +1,0 @@
-{
-  "items": [
-    { "title": "Peonies in June", "image": "", "category": "watercolor", "details": "Original · 9×12 in", "price": 340, "sold": false, "buy_link": "" },
-    { "title": "Morning Harbor", "image": "", "category": "watercolor", "details": "Signed print · 11×14 in", "price": 45, "sold": false, "buy_link": "" },
-    { "title": "Lake Cabin", "image": "", "category": "watercolor", "details": "Original · 12×9 in", "price": 380, "sold": true, "buy_link": "" },
-    { "title": "The Lost Little Fox", "image": "", "category": "illustration", "details": "Signed print · 8×10 in", "price": 30, "sold": false, "buy_link": "" }
-  ]
-}
